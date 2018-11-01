@@ -21,8 +21,8 @@ function GarageCmdAccessory(log, config) {
 GarageCmdAccessory.prototype.setState = function(isClosed, callback, context) {
   if (context === 'pollState') {
     // The state has been updated by the pollState command - don't run the open/close command
-    callback(null)
-    return
+    callback(null);
+    return;
   }
 
   var accessory = this;
@@ -84,7 +84,7 @@ GarageCmdAccessory.prototype.getState = function(callback) {
     }
 
     if (accessory.pollStateDelay > 0) {
-      accessory.pollState()
+      accessory.pollState();
     }
   });
 };

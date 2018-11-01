@@ -35,7 +35,7 @@ Field                   | Description
 **close**               | close command. Examples: `./close.sh` or `node close.js` (required)
 **state**               | state command.  Examples: `./check_state.js` or `node state.js` (required)
 **status_update_delay** | Time to have door in opening or closing state (defaults to 15 seconds)
-**poll_state_delay**    | Time between polling for the garage door's state (leave blank for disabled)
+**poll_state_delay**    | Time between polling for the garage door's state (leave blank to disable state polling)
 
 The open, close, and state commands must return the following verbs: OPEN, CLOSED, OPENING, CLOSING.
 
